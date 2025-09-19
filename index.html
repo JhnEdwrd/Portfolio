@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #f5f5f5;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .link-hover {
+            transition: all 0.3s ease;
+        }
+        .link-hover:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <nav class="sticky top-0 z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-800">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-center space-x-6">
+                <a href="#about" class="text-gray-400 hover:text-indigo-400 transition-colors">About</a>
+                <a href="#experience" class="text-gray-400 hover:text-indigo-400 transition-colors">Experience</a>
+                <a href="#education" class="text-gray-400 hover:text-indigo-400 transition-colors">Education</a>
+                <a href="#projects" class="text-gray-400 hover:text-indigo-400 transition-colors">Projects</a>
+                <a href="#learning" class="text-gray-400 hover:text-indigo-400 transition-colors">Learning</a>
+                <a href="#contact" class="text-gray-400 hover:text-indigo-400 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-12 max-w-4xl">
+        <header class="flex flex-col items-center mb-16" data-aos="fade-down">
+            <div class="w-64 h-64 rounded-full overflow-hidden mb-4 ring-2 ring-indigo-500 ring-offset-4 ring-offset-gray-900">
+                <img src="photo.JPG" alt="Profile" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-4xl font-bold mb-2">Hi, I'm <span class="gradient-text">John Edward</span></h1>
+            <p class="text-gray-400 text-lg">Aspiring Web Developer</p>
+            <div class="flex space-x-4 mt-4">
+                <a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors group relative">
+                    <i data-feather="github"></i>
+                    <span class="absolute -bottom-7 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Github</span>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors group relative">
+                    <i data-feather="file-text"></i>
+                    <span class="absolute -bottom-7 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Resume</span>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-red-400 transition-colors group relative">
+                    <i data-feather="mail"></i>
+                    <span class="absolute -bottom-7 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Email</span>
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <section class="mb-16" data-aos="fade-up">
+                <h2 class="text-2xl font-semibold mb-4 flex items-center">
+                    <i data-feather="user" class="mr-2"></i> About Me
+                </h2>
+                <div class="card rounded-lg p-6">
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        Bachelor of Science in Information Technology graduate, newly graduated with experience in web development, eager to apply technical knowledge and hands-on experience in troubleshooting. Motivated to work in an environment that encourages growth and provides opportunities to learn and enhance technical skills and knowledge.
+                    </p>
+                    <div class="mt-4">
+                        <h3 class="text-lg font-medium mb-2 text-indigo-300">Skills</h3>
+                        <ul class="text-gray-300 space-y-2">
+                            <li><span class="font-medium">Programming Languages:</span> HTML, CSS, JavaScript, PHP</li>
+                            <li><span class="font-medium">Framework:</span> Bootstrap</li>
+                            <li><span class="font-medium">Database Management:</span> MySQL</li>
+                            <li><span class="font-medium">Soft Skills:</span> Problem-solving, Time Management, Team Collaboration, Basic Troubleshooting & Tech Support</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-16" data-aos="fade-up" data-aos-delay="100">
+                <h2 class="text-2xl font-semibold mb-4 flex items-center">
+                    <i data-feather="briefcase" class="mr-2"></i> Professional Experience
+                </h2>
+                <div class="card rounded-lg p-6">
+                    <div class="mb-6">
+                        <h3 class="text-xl font-medium mb-1">Questronix Corporation - Junior Systems Engineer Intern</h3>
+                        <p class="text-gray-400 text-sm mb-3">February 2025 – May 2025</p>
+                        <ul class="text-gray-300 space-y-2 text-sm list-disc list-inside">
+                            <li>Assisted with on-site server delivery and installation at Landbank and SSS QC</li>
+                            <li>Practiced Unix system on AIX Operating System</li>
+                            <li>Supported team with feedback, testing, and troubleshooting</li>
+                            <li>Prepared technical documentation for servers including rack layouts and maintenance checklists</li>
+                            <li>Assisted in server re-cabling and fiber optic cable handling</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-16" data-aos="fade-up" data-aos-delay="150">
+                <h2 class="text-2xl font-semibold mb-4 flex items-center">
+                    <i data-feather="book-open" class="mr-2"></i> Education
+                </h2>
+                <div class="card rounded-lg p-6">
+                    <h3 class="text-xl font-medium mb-1">Bachelor of Science in Information Technology</h3>
+                    <p class="text-gray-400 text-sm mb-3">STI College Pasay - EDSA | Sep 2021 - July 2025</p>
+                    <p class="text-gray-300 mb-2">Relevant coursework:</p>
+                    <ul class="text-gray-300 space-y-1 text-sm list-disc list-inside">
+                        <li>Programming</li>
+                        <li>Mobile App Development</li>
+                        <li>Web Development</li>
+                        <li>Game Development</li>
+                        <li>Databases</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="mb-16" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="text-2xl font-semibold mb-4 flex items-center">
+                    <i data-feather="code" class="mr-2"></i> Projects
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="card rounded-lg p-6 link-hover group">
+                        <h3 class="text-xl font-medium mb-2">Barangay 87 Management System</h3>
+                        <p class="text-gray-400 text-sm mb-3">PHP, MySQL, Bootstrap</p>
+                        <p class="text-gray-300 text-sm mb-4">Developed a PHP-based website with online services including Barangay ID applications, digital blotter reporting, and document requests. Implemented role-based access control.</p>
+                        <a href="https://ka-barangay.online/" class="text-indigo-400 text-sm flex items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            View Project <i data-feather="arrow-up-right" class="ml-1 w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <div class="card rounded-lg p-6 link-hover group">
+                        <h3 class="text-xl font-medium mb-2">EDMC Agency Website</h3>
+                        <p class="text-gray-400 text-sm mb-3">PHP, JavaScript, Bootstrap</p>
+                        <p class="text-gray-300 text-sm mb-4">Assisted in developing website with user authentication, notification handling, and UI improvements for better user experience.</p>
+                        <a href="https://www.edmcagency.com/" class="text-indigo-400 text-sm flex items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            View Project <i data-feather="arrow-up-right" class="ml-1 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-16" data-aos="fade-up" data-aos-delay="250">
+                <h2 class="text-2xl font-semibold mb-4 flex items-center">
+                    <i data-feather="book" class="mr-2"></i> Learning
+                </h2>
+                <div class="card rounded-lg p-6">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-indigo-900/50 text-indigo-300 rounded-full text-sm">HTML</span>
+                        <span class="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm">CSS</span>
+                        <span class="px-3 py-1 bg-yellow-900/50 text-yellow-300 rounded-full text-sm">JavaScript</span>
+                        <span class="px-3 py-1 bg-purple-900/50 text-purple-300 rounded-full text-sm">PHP</span>
+                        <span class="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm">MySQL</span>
+                        <span class="px-3 py-1 bg-pink-900/50 text-pink-300 rounded-full text-sm">Bootstrap</span>
+                        <span class="px-3 py-1 bg-teal-900/50 text-teal-300 rounded-full text-sm">C#</span>
+                        <span class="px-3 py-1 bg-red-900/50 text-red-300 rounded-full text-sm">Java</span>
+                        <span class="px-3 py-1 bg-blue-700/50 text-blue-300 rounded-full text-sm">Python</span>
+                    </div>
+                </div>
+            </section>
+
+            <!--
+            <section data-aos="fade-up" data-aos-delay="400">
+                <h2 class="text-2xl font-semibold mb-4 flex items-center">
+                    <i data-feather="message-square" class="mr-2"></i> Get in Touch
+                </h2>
+                <div class="card rounded-lg p-6">
+                    <p class="text-gray-300 mb-4">I'm always open to chat about web development or potential opportunities!</p>
+                    <a href="mailto:hello@example.com" class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-md text-white font-medium transition-all hover:shadow-lg hover:shadow-indigo-500/20">
+                        <i data-feather="mail" class="mr-2"></i> Send me an email
+                    </a>
+                </div>
+            </section>
+            -->
+
+        </main>
+
+    </div>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+</html>
